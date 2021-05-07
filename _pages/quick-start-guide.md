@@ -1,8 +1,8 @@
 ---
-title: "Quick-Start Guide"
-permalink: /quick-start-guide/
-excerpt: "Minimal Mistakes for Forestry."
-last_modified_at: 2020-06-10
+title: Quick-Start Guide
+permalink: "/quick-start-guide/"
+excerpt: Minimal Mistakes for Forestry.
+last_modified_at: 2020-06-10 00:00:00 Z
 toc: false
 ---
 

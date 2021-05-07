@@ -1,8 +1,57 @@
 ---
+title: Seek The Joy
+timezone: UTC
+collections:
+  pets:
+    title: Pets
+    output: true
+    permalink: "/:collection/:path/"
+  posts:
+    title: Posts
+    output: true
+  recipes:
+    title: Recipes
+    output: true
+    permalink: "/:collection/:path/"
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: single
+    author_profile: true
+    read_time: true
+    comments: 
+    share: true
+    related: true
+- scope:
+    path: _pages
+    type: pages
+  values:
+    layout: single
+    author_profile: true
+- scope:
+    path: ''
+    type: recipes
+  values:
+    layout: single
+    author_profile: true
+    share: true
+    comments: true
+- scope:
+    path: ''
+    type: pets
+  values:
+    layout: single
+    author_profile: true
+    share: true
+    comment: true
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: default
 locale: en-US
-title: Seek The Joy
 title_separator: "-"
 subtitle: 
 name: eric laurits
@@ -14,7 +63,7 @@ repository:
 teaser: 
 logo: 
 masthead_title: 
-words_per_minute: "200"
+words_per_minute: '200'
 comments:
   provider: 
   disqus:
@@ -144,7 +193,7 @@ kramdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
-  footnote_nr: "1"
+  footnote_nr: '1'
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
@@ -153,9 +202,8 @@ sass:
   sass_dir: _sass
   style: compressed
 permalink: "/:categories/:title/"
-paginate: "5"
+paginate: '5'
 paginate_path: "/page:num/"
-timezone: 
 plugins:
 - jekyll-archives
 - jekyll-paginate
@@ -173,43 +221,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-collections:
-  recipes:
-    output: true
-    permalink: "/:collection/:path/"
-  pets:
-    output: true
-    permalink: "/:collection/:path/"
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: single
-    author_profile: true
-    read_time: true
-    comments: 
-    share: true
-    related: true
-- scope:
-    path: _pages
-    type: pages
-  values:
-    layout: single
-    author_profile: true
-- scope:
-    path: ''
-    type: recipes
-  values:
-    layout: single
-    author_profile: true
-    share: true
-    comments: true
-- scope:
-    path: ''
-    type: pets
-  values:
-    layout: single
-    author_profile: true
-    share: true
-    comment: true
